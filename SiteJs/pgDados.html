@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DiceRoll</title>
+        <link rel="stylesheet" href="sty.css">
+        <script src="roll.js"></script>
+    </head>
+    <body>
+        <header class="topo">
+          <h1 class="title">DiceRoll</h1>
+        <input class="but2"onclick="location.href='pg1.html'" type="button" value="Informações" ></input>
+        </header>
+        <aside class="barra">
+            <input type="image" value="d4" onclick="dice = 1; document.getElementById('dado').src='d4.png'; document.getElementById('resultado').innerHTML='4'"  id = "but" src="d4b.png" width="20%">
+            <p id="dadonome">D4</p>
+            <input type="image" value="d6" onclick="dice = 2; document.getElementById('dado').src='d6.png'; document.getElementById('resultado').innerHTML='6'" id = "but" src="d6b.png" width="20%">
+            <p id="dadonome">D6</p>
+            <input type="image" value="d8" onclick="dice = 3; document.getElementById('dado').src='d8.png'; document.getElementById('resultado').innerHTML='8'" id = "but" src="d8b.png" width="20%">
+            <p id="dadonome">D8</p>
+            <input type="image" value="d10" onclick="dice = 4; document.getElementById('dado').src='d10.png'; document.getElementById('resultado').innerHTML='10'" id = "but" src="d10b.png" width="20%">
+            <p id="dadonome">D10</p>
+            <input type="image" value="d12" onclick="dice = 5; document.getElementById('dado').src='d4.png'; document.getElementById('resultado').innerHTML='12'" id = "but" src="d4b.png" width="20%">
+            <p id="dadonome">D12</p>
+            <input type="image" value="d100" onclick="dice = 6; document.getElementById('dado').src='d4.png'; document.getElementById('resultado').innerHTML='100'" id = "but" src="d4b.png" width="20%">
+            <p id="dadonome">D100</p>
+            <input type="image" value="d20" onclick="dice = 0; document.getElementById('dado').src='d20.png'; document.getElementById('resultado').innerHTML='20'" id = "but" src="d20b.png" width="20%">
+            <p id="dadonome">D20</p>
+        </aside>
+        <section>
+
+        </section>
+        <article class="dadobig">
+            <p id="resultado">20</p>
+            <img id="dado" src="d20.png" width="30%">    
+        
+            <input type="button" class="button" onclick="document.getElementById('resultado').innerHTML = rolltst(dice); calc(); audioD()" value="Rolar">
+           
+        </article>
+        
+        <footer>
+            <table >
+                <tr id="tabelaresult">
+                    <th>D20</th>
+                    <td id="1">0</td>
+                    <td id="2">1</td>
+                    <td id="3">0</td>
+                </tr>
+                <tr>
+                    <th>D100</th>
+                    <td id="51">0</td>
+                    <td id="52">0</td>
+                    <td id="53">0</td>
+                </tr>
+                <tr>
+                    <th>D12</th>
+                    <td id="5">0</td>
+                    <td id="10">0</td>
+                    <td id="15">0</td>
+                </tr>
+                <tr>
+                    <th>D10</th>
+                    <td id="11">0</td>
+                    <td id="12">0</td>
+                    <td id="13">0</td>
+                </tr>
+                <tr>
+                    <th>D8</th>
+                    <td id="21">0</td>
+                    <td id="22">0</td>
+                    <td id="23">0</td>
+                </tr>
+                <tr>
+                    <th>D6</th>
+                    <td id="31">0</td>
+                    <td id="32">0</td>
+                    <td id="33">0</td>
+                </tr>
+                <tr>
+                    <th>D4</th>
+                    <td id="41">0</td>
+                    <td id="42">0</td>
+                    <td id="43">0</td>
+                </tr>
+                
+            </table>
+        </footer>
+        
+    </body>
+</html>
